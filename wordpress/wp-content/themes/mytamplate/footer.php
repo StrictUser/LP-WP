@@ -10,15 +10,15 @@
  */
 ?>
 
-        </div><!-- .site-content -->
+        </div><!-- .cover-container -->
 
-            <footer id="colophon" class="site-footer" role="contentinfo">
+        <footer id="colophon" class="site-footer" role="contentinfo">
 
-            </footer><!-- .site-footer -->
+        </footer><!-- .site-footer -->
 
-            </div><!-- .site -->
+        </div><!-- .site-wrapper -->
 
-            <?php wp_footer(); ?>
+        <?php wp_footer(); ?>
 
     </body>
 </html>

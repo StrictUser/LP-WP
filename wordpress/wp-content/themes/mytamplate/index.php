@@ -14,6 +14,18 @@
 
 get_header(); ?>
 
+<div class="left-text">
+    <p>Кавер группа</p>
+</div>
+
+<div class="right-text">
+    <p>Музыка жизнь</p>
+</div>
+
+<div class="cover-container">
+
+</div>
+
 
 
 <?php get_footer(); ?>

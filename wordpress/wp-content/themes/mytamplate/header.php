@@ -17,15 +17,19 @@
     <!--[if lt IE 9]>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
     <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="main_page">
+<div id="main_page" class="site-wrapper">
 
     <div id="sidebar" class="sidebar">
+        <div class="masthead-brand">
+
+        </div>
 
         <?php get_sidebar(); ?>
     </div><!-- .sidebar -->
 
-    <div id="content" class="site-content">
+    <div id="content">
