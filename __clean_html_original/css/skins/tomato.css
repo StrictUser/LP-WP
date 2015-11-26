@@ -26,4 +26,10 @@ svg path {
 .toggle_mnu {
   background-color: #222; }
 
+.top_mnu a:hover {
+  color: #FF6347;
+  background-color: rgba(255, 255, 255, 0.05); }
+.top_mnu a {
+  letter-spacing: 4px; }
+
 /*# sourceMappingURL=tomato.css.map */
