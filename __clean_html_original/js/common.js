@@ -9,16 +9,24 @@ $(document).ready(function() {
         heightDetect();
     });
 
-    $("#sandwich, .menu_item").click(function() {
+    $(".toggle_mnu").click(function() {
         $("#sandwich").toggleClass("active");
-        //$(".top_mnu").fadeIn(600);
     });
+
+    $(".top_mnu ul a").click(function(){
+        $(".top_mnu").fadeOut(400);
+        $("#sandwich").toggleClass("active");
+    }).append("<span>");
 
     $(".toggle_mnu").click(function(){
         if($(".top_mnu").is(":visible")){
-            $(".top_mnu").fadeOut(600);
+            $(".top_text").removeClass("h_opacify");
+            $(".top_mnu").fadeOut(400);
+            $(".top_mnu li a").removeClass("fadeInUp animated");
         }else{
+            $(".top_text").addClass("h_opacify");
             $(".top_mnu").fadeIn(600);
+            $(".top_mnu li a").addClass("fadeInUp animated");
         }
     });
 

@@ -18,18 +18,18 @@ p {
   border-color: #FF6347; }
 
 .main_color_bg {
-  background-color: #222; }
+  background-color: #FAFAFA; }
 
 svg path {
-  fill: #222; }
-
-.toggle_mnu {
-  background-color: #222; }
+  fill: #888; }
 
 .top_mnu a:hover {
-  color: #FF6347;
-  background-color: rgba(255, 255, 255, 0.05); }
+  color: #FF6347; }
 .top_mnu a {
   letter-spacing: 4px; }
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
 
 /*# sourceMappingURL=tomato.css.map */

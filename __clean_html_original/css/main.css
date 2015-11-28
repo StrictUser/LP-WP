@@ -63,10 +63,17 @@ svg {
 .toggle_mnu {
   width: 60px;
   height: 60px;
-  float: right;
-  position: relative;
+  position: fixed;
   z-index: 100;
-  border: none; }
+  border: none;
+  right: 20px;
+  top: 20px;
+  background-color: transparent; }
+  .toggle_mnu span {
+    display: block; }
+
+.toggle_mnu:hover {
+  border: transparent; }
 
 /** styles for menu icon */
 body {
@@ -91,7 +98,8 @@ body {
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  transition: transform 0.5s, top 0.2s; }
+  transition: transform 0.5s, top 0.2s;
+  display: block; }
 
 /* transition-delay: 0.2s, 0s; */
 .sw-bottom {
@@ -149,8 +157,58 @@ ul {
   ul a {
     color: #fff;
     display: block;
-    padding: 20px 0;
     text-transform: uppercase;
-    font-size: 12px; }
+    font-size: 12px;
+    opacity: 0;
+    position: relative;
+    height: 60px; }
+    ul a span {
+      display: block;
+      position: relative;
+      top: -40px;
+      left: 0;
+      height: 100%;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      ul a span:hover {
+        background-color: rgba(255, 255, 255, 0.08); }
+
+.top_wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+  .top_wrapper .top_descr {
+    display: table-row; }
+    .top_wrapper .top_descr .top_centered {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+  .top_wrapper .top_text {
+    display: inline-block; }
+    .top_wrapper .top_text p {
+      margin: 0;
+      text-transform: uppercase; }
+    .top_wrapper .top_text h1 {
+      display: inline-block;
+      padding: 10px 35px;
+      color: #fff;
+      border: 8px solid #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2.8em;
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: rgba(0, 0, 0, 0.3) 0 0 0 1000px;
+      margin: 0 20px; }
+
+.h_opacify {
+  opacity: 0.2;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 /*# sourceMappingURL=main.css.map */
