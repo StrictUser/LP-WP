@@ -23,6 +23,30 @@ section,
 .main_head
 	position: relative
 
+section
+	padding: 70px 0 90px
+	h2
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin: 0 0 15px
+
+.s_descr_wrap
+	text-align: center
+	.s_descr
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		position: relative
+		margin-bottom: 130px
+		&::after
+			content: ""
+			width: 150px
+			height: 1px
+			position: absolute
+			left: 50%
+			margin: 50px 0 0 -75px
+
 .main_head
 	min-height: 620px
 	padding-top: 20px
@@ -107,7 +131,6 @@ $h: 3px
 	transition: transform 0.5s, top 0.2s
 	display: block
 
-
 /* transition-delay: 0.2s, 0s; */
 
 .sw-bottom
@@ -121,8 +144,6 @@ $h: 3px
 	transition: transform 0.5s, top 0.2s
 	transition-delay: 0.2s, 0s
 
-
-
 .sw-footer
 	position: relative
 	width: $w
@@ -133,7 +154,6 @@ $h: 3px
 	border-radius: 4px 4px 4px 4px
 	transition: all 0.5s
 	transition-delay: 0.1s
-
 
 #sandwich.active
 	.sw-topper
@@ -168,6 +188,15 @@ ul, li
 ul
 	margin-top: 200px
 	text-align: center
+	li
+		&:nth-child(1) a
+			+animation-duration(.8s)
+		&:nth-child(2) a
+			+animation-duration(1.3s)
+		&:nth-child(3) a
+			+animation-duration(2s)
+		&:nth-child(4) a
+			+animation-duration(2.8s)
 	a
 		color: #fff
 		display: block
@@ -176,6 +205,7 @@ ul
 		opacity: 0
 		position: relative
 		height: 60px
+		outline: none
 		span
 			display: block
 			position: relative
@@ -203,21 +233,28 @@ ul
 	.top_text
 		display: inline-block
 		p
-			margin: 0
+			margin: 20px 0
 			text-transform: uppercase
+			+animation-delay(1.3s)
 		h1
 			display: inline-block
 			padding: 10px 35px
 			color: #fff
-			border: 8px solid #fff
+			border: 4px solid #fff
 			text-transform: uppercase
 			font-weight: bold
 			font-size: 2.8em
 			background-color: rgba(0, 0, 0, .3)
 			box-shadow: rgba(0,0,0,.3) 0 0 0 1000px
 			margin: 0 20px
+			+animation-delay(.6s)
 
 
 .h_opacify
 	opacity: 0.2
 	+transition(all .2s ease)
+
+.main_footer
+	padding: 50px 0
+	font-size: 13px
+	font-weight: 300
