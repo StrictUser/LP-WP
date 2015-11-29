@@ -4,8 +4,6 @@ $color: #FF6347 //Theme skin
 $text_color: #888
 $main_color: #222
 $bg_light: #FAFAFA
-$main_bg_color: white
-$content_color: #fff
 
 @mixin kerning($kerning)
 	letter-spacing: $kerning + px
@@ -18,7 +16,8 @@ a
 	color: $color
 
 p,
-body .main_footer
+body .main_footer,
+.s_about li
 	color: $text_color
 
 .color_element
@@ -28,7 +27,7 @@ body .main_footer
 .color_border
 	border-color: $color
 
-.bg_main
+//.bg_main
 	background-color: $main_bg_color
 
 .bg_light
@@ -36,11 +35,11 @@ body .main_footer
 
 .bg_dark
 	background-color: $main_color
-	color: $content_color
+	color: #fff
 	.s_descr::after
-		background-color: $content_color
+		background-color: #fff
 	a
-		color: $content_color
+		color: #fff
 
 svg
 	path
@@ -57,10 +56,20 @@ svg
 		color: $bg_light
 		+kerning(5)
 
+.personal_header
+	+kerning(2)
+
 .s_descr
-	+kerning(5)
+	+kerning(4)
 	&::after
 		background-color: $main_color
 
+section
+	h3
+		+kerning(3)
+		color: $text_color
 
+.s_about
+	p:nth-child(even)
+		color: $color
 
