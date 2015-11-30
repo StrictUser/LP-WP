@@ -24,11 +24,33 @@
         font-size: 2em;
         padding: 0 10px;
     }
+    .main_footer .social_wrap{
+        float: none;
+        margin-top: 20px;
+    }
+    footer .container .col-md-12, footer .container .col-md-12 .social_wrap{
+        text-align: center;
+        padding: 0;
+    }
+    footer .container .col-md-12 .social_wrap ul{
+        padding: 0;
+    }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+    footer .container .col-md-12, footer .container .col-md-12 .social_wrap{
+        text-align: center;
+    }
+    footer .container .col-md-12 .social_wrap{
+        float: none;
+    }
+    .main_footer{
+        padding: 10px 0 50px 0;
+    }
+    footer .container .col-md-12 .social_wrap ul{
+        padding: 0;
+    }
 }
 
 
