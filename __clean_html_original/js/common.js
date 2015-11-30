@@ -4,10 +4,12 @@ $(document).ready(function() {
     $(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");
 
     $(".animation_1").animated("flipInY", "flipOutY");
-
     $(".animation_2").animated("fadeInLeft", "fadeOutLeft");
-
     $(".animation_3").animated("fadeInRight", "fadeOutRight");
+
+    $(".left .resume_item").animated("fadeInLeft", "fadeOutLeft");
+    $(".right .resume_item").animated("fadeInRight", "fadeOutRight");
+
 
     $(".popup").magnificPopup({type:'image'});
 
