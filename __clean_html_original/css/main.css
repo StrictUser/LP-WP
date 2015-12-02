@@ -104,7 +104,7 @@ svg {
   border: none;
   right: 20px;
   top: 20px;
-  background-color: transparent; }
+  background-color: black; }
   .toggle_mnu span {
     display: block; }
 
@@ -401,5 +401,41 @@ svg {
   .port_descr img {
     width: 100%;
     margin-top: 10px; }
+
+.contact_box {
+  margin-bottom: 30px; }
+  .contact_box h3 {
+    text-align: left;
+    color: #000;
+    margin-bottom: 0px;
+    font-size: 14px; }
+  .contact_box .contact_icon {
+    font-size: 30px; }
+  .contact_box p {
+    margin-top: 5px; }
+
+.main_form button {
+  border: none;
+  line-height: 32px;
+  padding: 0 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+  float: right; }
+
+.form-group {
+  display: block;
+  margin-bottom: 20px; }
+  .form-group input,
+  .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    line-height: 40px;
+    text-indent: 12px;
+    font-size: 12px;
+    background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */

@@ -36,6 +36,8 @@ $(document).ready(function() {
         $("#sandwich").toggleClass("active");
     });
 
+    $(".top_mnu ul a").mPageScroll2id();
+
     $(".top_mnu ul a").click(function(){
         $(".top_mnu").fadeOut(400);
         $("#sandwich").toggleClass("active");
@@ -57,6 +59,8 @@ $(document).ready(function() {
         $(this).find("a").attr("href", "#work_" + i);
         $(this).find(".port_descr").attr("id", "work_" + i);
     });
+
+    $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
 
 });
 
