@@ -25,7 +25,7 @@
 <div id="main_page" class="site-wrapper">
 
     <div id="sidebar" class="sidebar">
-        <div class="masthead-brand">
+        <div class="navbar-brand">
 
         </div>
 

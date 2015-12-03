@@ -23,6 +23,9 @@ get_header(); ?>
 </div>
 
 <div class="cover-container">
+    <div class="cover-photo">
+
+    </div>
 
 </div>
 

@@ -181,6 +181,7 @@ html,
 body {
     height: 100%;
     background-color: white;
+    color: #0f0f0f;
 }
 body {
     color: #fff;
@@ -194,24 +195,61 @@ body {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-color: rgba(186, 186, 186, 0.12);
+    background-color: white;
 }
 .cover-container {
+    height: 768px;
+    margin: 0px 85px;
+    display: block;
+    position: relative;
+}
+
+.cover-photo{
+    z-index: 1000;
+    background: no-repeat center center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     margin: 0px;
+    padding: 0px;
     background-image: url("images/main.jpg");
-    height: 638px;
-    float: right;
 }
 
 .left-text{
-    float: left;
+    /*float: left;
     height: 619px;
-    min-width: 97px;
+    min-width: 97px;*/
+    opacity: 1;
+    height: 938px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 85px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 9999;
 }
 .right-text{
-    float: right;
+    /*float: right;
     height: 619px;
-    min-width: 97px;
+    min-width: 97px;*/
+    opacity: 1;
+    height: 938px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 85px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 9999;
 }
 
 /* Padding for spacing */
@@ -223,14 +261,24 @@ body {
  * Header
  */
 #sidebar{
-    max-width: 100%;
-    height: 10%;
+    padding-bottom: 30px;
+    padding-top: 32px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0px 85px;
+    z-index: 9999;
+    display: box;
 }
 
-.masthead-brand {
+.navbar-brand {
+    width: 127px;
+    height: 63px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-image: url("images/logo.png");
+
 }
 
 .masthead-nav > li {
@@ -311,7 +359,7 @@ body {
     .masthead,
     .mastfoot,
     .cover-container {
-        width: 1100px;
-        height: 619px;
+        width: 100%;
+        height: 95%;
     }
 }

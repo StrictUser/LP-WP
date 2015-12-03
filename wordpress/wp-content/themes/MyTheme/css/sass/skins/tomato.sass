@@ -1,0 +1,133 @@
+@import "../bourbon/bourbon"
+
+$color: #FF6347 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+$col-w: #fff
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p,
+body .main_footer,
+.s_about li
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+//.bg_main
+	background-color: $main_bg_color
+
+.bg_light
+	background-color: $bg_light
+
+.bg_dark
+	background-color: $main_color
+	color: $col-w
+	.s_descr::after
+		background-color: $col-w
+	a
+		color: $col-w
+
+svg
+	path
+		fill: $text_color
+
+.top_mnu
+	a:hover
+		color: $color
+	a
+		+kerning(4)
+
+.top_text
+	p
+		color: $bg_light
+		+kerning(5)
+
+.personal_header
+	+kerning(2)
+
+.s_descr
+	+kerning(4)
+	&::after
+		background-color: $main_color
+
+section
+	h3
+		+kerning(3)
+		color: $text_color
+
+.s_about
+	p:nth-child(even)
+		color: $color
+
+.resume_container
+	h3
+		color: $main_color
+		+kerning(1)
+
+
+.resume_item
+	.year
+		background-color: $color
+		color: $col-w
+	h3
+		+kerning(1)
+
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(2)
+		&.active
+			color: $col-w
+			border-bottom: 1px solid $color
+			
+.portfolio_item
+	.port_item_cont
+		background-color: rgba(0, 0, 0, .8)
+		h3
+			color: $col-w
+		a
+			background-color: transparent
+			border-color: $color
+			color: $color
+
+.port_descr
+	background-color: $col-w
+
+.main_footer a
+	color: $color
+
+.contact_icon
+	color: $color
+
+.text-danger
+	color: $color
+
+form
+	input:focus,
+	textarea:focus
+		border: 1px solid $color
+	input,
+	textarea
+		+kerning(2)
+	button
+		background-color: $color
+		color: #fff
+		+kerning(2)
+	.form-group
+		+kerning(2)
+		color: $text_color
