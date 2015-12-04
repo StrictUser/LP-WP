@@ -79,12 +79,12 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #fff;
-    height: 60px;
-    width: 60px;
+    height: 200px;
+    width: 200px;
     margin-top: -30px;
     margin-left: -30px;
-    left: 50%;
-    top: 50%;
+    left: 45%;
+    top: 40%;
     position: absolute; }
 
 .logo_container {
@@ -263,7 +263,6 @@ svg {
 
 .h_opacify {
   opacity: 0.2;
-  -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
@@ -364,7 +363,8 @@ svg {
   display: none;
   padding: 0; }
   .portfolio_item img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .portfolio_item .port_item_cont {
     position: absolute;
     top: 0;
